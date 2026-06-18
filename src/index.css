@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a0a0f;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* 3D depth text for hero name */
+  .text-3d {
+    text-shadow:
+      1px 1px 0 rgba(79, 142, 247, 0.55),
+      2px 2px 0 rgba(79, 142, 247, 0.48),
+      3px 3px 0 rgba(79, 142, 247, 0.40),
+      4px 4px 0 rgba(79, 142, 247, 0.32),
+      5px 5px 0 rgba(79, 142, 247, 0.24),
+      6px 6px 0 rgba(79, 142, 247, 0.16),
+      8px 8px 16px rgba(79, 142, 247, 0.20),
+      0 0 40px rgba(79, 142, 247, 0.12);
+    color: #ffffff;
+  }
+
+  /* Glow on accent text */
+  .text-glow {
+    color: #4F8EF7;
+    text-shadow: 0 0 20px rgba(79, 142, 247, 0.6), 0 0 40px rgba(79, 142, 247, 0.3);
+  }
+
+  /* Glassmorphism card */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(79, 142, 247, 0.12);
+  }
+
+  .glass-hover {
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+  }
+
+  .glass-hover:hover {
+    border-color: rgba(79, 142, 247, 0.35);
+    box-shadow: 0 0 30px rgba(79, 142, 247, 0.12), inset 0 0 30px rgba(79, 142, 247, 0.04);
+    background: rgba(79, 142, 247, 0.05);
+  }
+
+  /* Skill pill glow */
+  .pill-glow {
+    transition: box-shadow 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .pill-glow:hover {
+    box-shadow: 0 0 12px rgba(79, 142, 247, 0.45);
+    border-color: rgba(79, 142, 247, 0.6);
+    color: #4F8EF7;
+  }
+}
+
+/* Ring animation */
+@keyframes ring-spin {
+  from { transform: rotateY(0deg) rotateX(65deg); }
+  to   { transform: rotateY(360deg) rotateX(65deg); }
+}
+
+@keyframes ring-spin-reverse {
+  from { transform: rotateY(0deg) rotateX(-65deg); }
+  to   { transform: rotateY(-360deg) rotateX(-65deg); }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+
+.ring-outer {
+  animation: ring-spin 8s linear infinite;
+}
+
+.ring-inner {
+  animation: ring-spin-reverse 6s linear infinite;
+}
+
+.float-geo {
+  animation: float-y 5s ease-in-out infinite;
+}
+
+/* Typewriter cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Timeline glow pulse */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(79, 142, 247, 0.5); }
+  50% { box-shadow: 0 0 16px rgba(79, 142, 247, 0.9); }
+}
+
+.dot-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
