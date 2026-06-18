@@ -33,8 +33,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#hero" className="font-heading font-bold text-white text-lg tracking-tight">
-          MR<span className="text-glow">.</span>
+        <a href="#hero">
+          <img
+            src="/images/high-level-description-a-minimalist-futu_t2SKFhylXZK-KuVBjWH6nQ_pqzsOtZORpmZmlM8hTPKrg_cover.jpg"
+            alt="Mohammed Rihan Logo"
+            style={{ height: '50px', width: 'auto' }}
+          />
         </a>
 
         <ul className="hidden md:flex items-center gap-7">
