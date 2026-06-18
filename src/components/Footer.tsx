@@ -13,7 +13,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-5">
           {[
-            { Icon: Mail, href: 'mailto:rihanrifat342@gmail.com', label: 'Email' },
+            { Icon: Mail, href: 'mailto:mohammed.rihan342@gmail.com', label: 'Email' },
             { Icon: Linkedin, href: 'https://www.linkedin.com/in/mohammedrihan', label: 'LinkedIn' },
             { Icon: Github, href: 'https://github.com/rihanrifat342', label: 'GitHub' },
           ].map(({ Icon, href, label }) => (

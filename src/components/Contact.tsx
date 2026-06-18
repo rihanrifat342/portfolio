@@ -5,8 +5,8 @@ const contacts = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'rihanrifat342@gmail.com',
-    href: 'mailto:rihanrifat342@gmail.com',
+    value: 'mohammed.rihan342@gmail.com',
+    href: 'mailto:mohammed.rihan342@gmail.com',
   },
   {
     icon: Linkedin,
@@ -87,7 +87,7 @@ export default function Contact() {
             className="mt-10"
           >
             <a
-              href="mailto:rihanrifat342@gmail.com"
+              href="mailto:mohammed.rihan342@gmail.com"
               className="inline-flex items-center gap-2 bg-accent hover:bg-blue-400 text-white font-semibold px-8 py-3.5 rounded-lg transition-all duration-200 shadow-glow hover:shadow-glow-lg"
               style={{ fontFamily: 'Space Grotesk, sans-serif' }}
             >
