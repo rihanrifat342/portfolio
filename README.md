@@ -2,7 +2,7 @@
 
 🌐 Live Site: https://mohammed-rihan-portf-jx94.bolt.host
 
-Junior Frontend Developer & DevOps Engineer based in Dubai, UAE.
+Junior Frontend Developer & DevOps Engineer based in BENGALURU, INDIA.
 
 ## Tech Stack
 - React.js

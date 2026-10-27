@@ -34,9 +34,7 @@ export default function About() {
           >
             <div className="space-y-4 text-slate-400 leading-relaxed text-[15px]">
               <p>
-                I'm Mohammed Rihan — a B.E. Information Science graduate from AIET (2025) based in
-                Dubai, UAE. I bridge backend engineering and cloud operations, building everything
-                from REST APIs to Kubernetes clusters.
+                I'm Mohammed Rihan, a 2025 B.E. Information Science and Engineering graduate from Alvas Institute of Engineering and Technology. Currently based in Bengaluru, India, I'm interested in software development, backend engineering, and DevOps. I enjoy building practical projects using Python, Java, APIs, containers, and cloud-native tools.
               </p>
               <p>
                 My edge is AI-native development: using GitHub Copilot, Claude, and Cursor to
@@ -75,7 +73,7 @@ export default function About() {
               },
               {
                 icon: MapPin,
-                title: 'Dubai, UAE',
+                title:'BENGALURU, INDIA',
                 sub: 'Open to Hybrid & Remote · Targeting Junior DevOps / Full-Stack',
               },
               {
